@@ -18,11 +18,12 @@ const funcaoErro = () => {
 };
 
 const apiMoeda = () => {
+  const { value } = inputMoney;
   if (!inputMoney.value) {
     funcaoErro();
   }
 
-  fetch(`https://api.exchangerate.host/latest?base=${inputMoney.value}`).then(
+  fetch(`https://api.exchangerate.host/latest?base=${value}`).then(
     (response) =>
       response
         .json()
