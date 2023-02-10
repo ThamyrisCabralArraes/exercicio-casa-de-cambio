@@ -22,24 +22,26 @@ const apiMoeda = () => {
     funcaoErro();
   }
 
-  fetch(`https://api.exchangerate.host/latest?base=${inputMoney.value}`).then((response) =>
-    response
-      .json()
-      .then((data) => {
-        const { rates } = data;
+  fetch(`https://api.exchangerate.host/latest?base=${inputMoney.value}`).then(
+    (response) =>
+      response
+        .json()
+        .then((data) => {
+          const { rates } = data;
 
-        titulo.textContent = `Valores relacionados a moeda ${inputMoney.value}`;
+          titulo.textContent = `Valores relacionados a moeda ${inputMoney.value}`;
 
-        const ratesR = Object.entries(rates);
-        ratesR.forEach(([rate, valu]) => {
-          const li = document.createElement('li');
-          li.classList.add('lista-de-moeda');
-          li.innerHTML = `${rate} = <span>${valu.toFixed(2)}</span>`;
-          inputMoney.value = '';
-          uls.appendChild(li);
-        });
-      })
-      .catch((error) => error.message),
+          const ratesR = Object.entries(rates);
+          uls.innerHTML = '';
+          ratesR.forEach(([rate, valu]) => {
+            const li = document.createElement('li');
+            li.classList.add('lista-de-moeda');
+            li.innerHTML = `${rate} = <span>${valu.toFixed(2)}</span>`;
+            uls.appendChild(li);
+          });
+        })
+        .catch((error) => error.message),
+    (inputMoney.value = ''),
   );
 };
 
