@@ -13,10 +13,11 @@ body {
 
 #ul-li {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
+  margin-right: 18px;
 }
 
 .moeda {
