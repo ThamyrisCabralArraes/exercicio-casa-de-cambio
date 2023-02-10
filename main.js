@@ -38,6 +38,10 @@ const apiMoeda = () => {
             const li = document.createElement('li');
             li.classList.add('lista-de-moeda');
             li.innerHTML = `${rate} = <span>${valu.toFixed(2)}</span>`;
+            const img = document.createElement('img');
+            img.src = 'public/coins-logo.png';
+
+            li.appendChild(img);
             uls.appendChild(li);
           });
         })

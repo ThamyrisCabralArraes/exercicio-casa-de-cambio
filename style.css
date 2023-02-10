@@ -4,12 +4,25 @@ body {
   margin-top: 8px;
 }
 
+h1 {
+  font-size: 38px;
+}
+
 .lista-de-moeda {
   list-style: none;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 5px;
-  width: 110px;
+  width: 120px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lista-de-moeda {
+  order: 2;
 }
 
 #ul-li {
