@@ -14,15 +14,12 @@ h1 {
   border-radius: 5px;
   padding: 5px;
   width: 120px;
+  order: 2;
 }
 
 li {
   display: flex;
   justify-content: space-between;
-}
-
-.lista-de-moeda {
-  order: 2;
 }
 
 #ul-li {
