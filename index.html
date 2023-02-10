@@ -14,23 +14,28 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app">
-      <h1>Casa de câmbio</h1>
-      <label for="money">
-        Digite a Moeda
+    <main>
+      <div id="header">
+        <h1>Casa de <span id="spanId">câmbio</span></h1>
+        <label for="money"> Digite a Moeda </label> <br />
         <input
           name="money"
           id="money"
           type="text"
           placeholder="USD"
         />
-      </label>
-      <button id="button-click">Click</button>
-      <div id="moedas">
-        <p id="titulo">Valores relacionados a moeda</p>
-        <ul id="ul-li"></ul>
+        <button id="button-click">Pesquisar</button>
       </div>
-    </div>
+      <div id="app">
+        <div
+          id="moedas"
+          class="moeda"
+        >
+          <p id="titulo">Valores relacionados a moeda</p>
+          <ul id="ul-li"></ul>
+        </div>
+      </div>
+    </main>
     <script
       type="module"
       src="/main.js"

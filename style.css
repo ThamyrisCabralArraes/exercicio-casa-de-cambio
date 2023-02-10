@@ -1,0 +1,80 @@
+body {
+  background-color: #3d3d3d;
+  color: white;
+  margin-top: 8px;
+}
+
+.lista-de-moeda {
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#ul-li {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.moeda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 900px;
+  height: 583;
+  top: 290;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.172);
+  border-radius: 5px;
+}
+
+span {
+  color: yellow;
+}
+
+#spanId {
+  color: #95eba8;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #95eba8;
+  width: 170px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #95eba8a8;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.172);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 1080px) {
+  #header {
+    margin-left: 500px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #header {
+    margin-left: 500px;
+  }
+}

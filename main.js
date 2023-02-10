@@ -34,7 +34,7 @@ const apiMoeda = () => {
         ratesR.forEach(([rate, valu]) => {
           const li = document.createElement('li');
           li.classList.add('lista-de-moeda');
-          li.innerHTML = `${rate} = ${valu}`;
+          li.innerHTML = `${rate} = <span>${valu}</span>`;
           inputMoney.value = '';
           uls.appendChild(li);
         });
